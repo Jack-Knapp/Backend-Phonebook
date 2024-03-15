@@ -2,7 +2,7 @@ console.log("ello Govna")
 
 const express = require('express')
 const morgan = require('morgan')
-const cors =require('cors')
+const cors = require('cors')
 
 morgan.token('data', function getData(request){
   //console.log(request.body)
@@ -15,7 +15,7 @@ morgan.token('data', function getData(request){
 
 const app =express()
 
-//app.use(cors())
+app.use(cors())
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :data'))
 
