@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const url =
-    `mongodb+srv://FSPB:${MONGODB_KEY}@fs-phonebook.hhtjr8a.mongodb.net/?retryWrites=true&w=majority&appName=FS-Phonebook`
+    `mongodb+srv://FSPB:${process.env.MONGODB_KEY}@fs-phonebook.hhtjr8a.mongodb.net/?retryWrites=true&w=majority&appName=FS-Phonebook`
 
 mongoose.set('strictQuery',false)
 
